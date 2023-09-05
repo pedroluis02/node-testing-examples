@@ -28,7 +28,7 @@ Create `babel` file:
 babel.config.js
 ```
 
-Setup `scripts` options` in `package.json` file:
+Setup `scripts` options in `package.json` file:
 ```
 "scripts": {
     "start": "npx ts-node main.ts",
