@@ -19,7 +19,7 @@ setup-ts-project.sh
 Setup `Jest`:
 
 ```
-setup-ts-project.sh
+setup-ts-jest.sh
 ```
 
 Create `babel` file:
