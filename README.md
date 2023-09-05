@@ -9,6 +9,22 @@ NodeJs And TypeScript Unit Tests
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/)
 
+## How to run
+Install dependences
+```
+npm install
+```
+
+Run main
+```
+npm start
+```
+
+Run test
+```
+npm test
+```
+
 ## How was it set up?
 Setup `typescript` project: 
 
