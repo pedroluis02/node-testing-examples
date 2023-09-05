@@ -1,10 +1,20 @@
 import "jest";
-import { BankAccount } from "../src/bank";
+import { Account, BankAccount } from "../src/bank";
 
 describe('bank account', () => {
-    test('add deposit amount', () => {
-        const account = new BankAccount('Test1', 100);
+    let account: Account;
+
+    beforeEach(() => {
+        account = new BankAccount('Test1', 100);
+    });
+
+    test('add deposit amount by number', () => {
         expect(account.deposit(20)).toBeTruthy()
+        expect(account.getAmount()).toBe(120);
+    });
+
+    test('add deposit amount by string', () => {
+        expect(account.deposit("20")).toBeTruthy()
         expect(account.getAmount()).toBe(120);
     });
 });
