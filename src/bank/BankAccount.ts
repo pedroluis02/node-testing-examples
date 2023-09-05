@@ -38,7 +38,7 @@ class BankAccount implements Account {
         return true;
     }
 
-    public isValidDepositAmount = (input: number) : boolean => input < BankAccount.MIN_DEPOSIT_AMOUNT;
+    private isValidDepositAmount = (input: number) : boolean => input < BankAccount.MIN_DEPOSIT_AMOUNT;
 
     public toString() : string {
         return `BankAccount{name: ${this.name}, amount: ${this.amount}}`;
