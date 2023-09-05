@@ -1,9 +1,14 @@
 import "jest";
-import { SquareFigure } from "../src/figure";
+import { Figure, SquareFigure } from "../src/figure";
 
 describe('square figure', () => {
+  let figure: Figure;
+
+  beforeAll(() => {
+    figure = new SquareFigure(2, 4);
+  });
+
   test('calculate area', () => {
-    const figure = new SquareFigure(2, 4);
     expect(figure.area()).toBe(8);
   });
 });
