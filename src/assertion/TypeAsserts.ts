@@ -1,11 +1,13 @@
+import { AssertionError } from "assert";
+
 export class TypeAsserts {
     static isNumber(value: unknown): asserts value is number {
         let isNumber = true;
     
         if (typeof value === 'string') {
             try {
-                let _ = parseFloat(value);
-                isNumber = true;
+                let result = parseFloat(value);
+                isNumber = !isNaN(result)
             } catch(error) {
                 isNumber = false;
             }
@@ -14,7 +16,7 @@ export class TypeAsserts {
         }
     
         if (!isNumber) {
-            throw new Error(`The value is not number.`);
+            throw new AssertionError({message: `The value ${value} is not number.`});
         }
     } 
 }
