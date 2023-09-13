@@ -27,7 +27,7 @@ class BankAccount implements Account {
             value = inputAmount;
         }
 
-        assert(value > 0);
+        assert(value > 0, `The input amount should be greather than 0`);
 
         if (this.isValidDepositAmount(value)) {
             throw new Error(`The input amount should be greather than ${BankAccount.MIN_DEPOSIT_AMOUNT}`);
