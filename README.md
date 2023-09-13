@@ -7,6 +7,8 @@ NodeJs And TypeScript Unit Tests
 
 ## Technologies
 - [TypeScript](https://www.typescriptlang.org/)
+- [Assertion Functions](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#assertion-functions)
+- [Type Assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types)
 - [Jest](https://jestjs.io/)
 
 ## How to run
