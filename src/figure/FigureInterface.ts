@@ -1,3 +1,3 @@
 export interface Figure {
-    area() : number;
+  area(): number;
 }
