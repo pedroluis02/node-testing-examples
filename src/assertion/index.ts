@@ -1,1 +1,1 @@
-export * from "./TypeAsserts";
+export * from './typeAsserts';

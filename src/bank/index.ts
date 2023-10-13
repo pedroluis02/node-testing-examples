@@ -1,2 +1,2 @@
-export * from "./AccountInterface";
-export * from "./BankAccount";
+export * from './account.interface';
+export * from './bankAccount';

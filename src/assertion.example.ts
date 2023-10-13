@@ -1,5 +1,5 @@
-import { SquareFigure } from "./figure";
-import { BankAccount } from "./bank";
+import { SquareFigure } from './figure';
+import { BankAccount } from './bank';
 
 function example1() {
   let figure = new SquareFigure(2, 4);
@@ -10,10 +10,10 @@ function example1() {
 }
 
 function example2() {
-  let account = new BankAccount("Pedro Luis", 100);
+  let account = new BankAccount('Pedro Luis', 100);
   console.log(account);
 
-  account.deposit("20");
+  account.deposit('20');
 
   console.log(`Account after deposit: ${account}`);
 }

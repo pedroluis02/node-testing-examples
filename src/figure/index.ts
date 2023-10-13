@@ -1,2 +1,2 @@
-export * from "./FigureInterface";
-export * from "./SquareFigure";
+export * from './figure.interface';
+export * from './squareFigure';

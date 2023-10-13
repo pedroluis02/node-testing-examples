@@ -1,5 +1,5 @@
-import assert from "assert";
-import { Figure } from "./FigureInterface";
+import assert from 'assert';
+import { Figure } from './figure.interface';
 
 export class SquareFigure implements Figure {
   private length: number;

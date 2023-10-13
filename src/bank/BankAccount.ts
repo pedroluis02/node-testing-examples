@@ -1,7 +1,7 @@
-import assert from "assert";
+import assert from 'assert';
 
-import { TypeAsserts } from "../assertion";
-import { Account } from "./AccountInterface";
+import { TypeAsserts } from './../assertion';
+import { Account } from './account.interface';
 
 class BankAccount implements Account {
   private name: string;
@@ -21,7 +21,7 @@ class BankAccount implements Account {
     TypeAsserts.isNumber(inputAmount);
 
     let value: number;
-    if (typeof inputAmount === "string") {
+    if (typeof inputAmount === 'string') {
       value = Number(inputAmount);
     } else {
       value = inputAmount;

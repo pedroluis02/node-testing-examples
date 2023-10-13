@@ -1,17 +1,17 @@
-import { AssertionError } from "assert";
+import { AssertionError } from 'assert';
 
 export class TypeAsserts {
   static isNumber(value: unknown): asserts value is number {
     let isNumber = true;
 
-    if (typeof value === "string") {
+    if (typeof value === 'string') {
       try {
         let result = parseFloat(value);
         isNumber = !isNaN(result);
       } catch (error) {
         isNumber = false;
       }
-    } else if (typeof value !== "number") {
+    } else if (typeof value !== 'number') {
       isNumber = false;
     }
 
